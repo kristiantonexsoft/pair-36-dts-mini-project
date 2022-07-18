@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux"
 
-class Dashboard extends Component {
+class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -16,7 +16,7 @@ class Dashboard extends Component {
                 <div className="row">
                   <div className="col-sm-12">
                     <div className="page-title-box">
-                      <h3 className="page-title"><b><i className="fa fa-home" />&nbsp; Home - Sistem Informasi Bioskop</b></h3>
+                      <h3 className="page-title"><b><i className="fas fa-folder-open" />&nbsp; Register - Sistem Informasi Bioskop</b></h3>
                       <ol className="breadcrumb">
                         <li className="breadcrumb-item active">DTS Pair 36 Kristianto - Riki Purnama</li>
                       </ol>
@@ -32,7 +32,7 @@ class Dashboard extends Component {
                             <h6 className="verti-label text-white-50">Bioskop</h6>
                             <div className="text-white">
                               <h6 className="mt-0 text-white-50">Menu</h6>
-                              <h4 className="mb-3 mt-0"><b>Home</b></h4>
+                              <h4 className="mb-3 mt-0"><b>Login</b></h4>
                             </div>
                             <div className="mini-stat-icon">
                               <i className="fas fa-clock  display-2" />
@@ -64,4 +64,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Register);

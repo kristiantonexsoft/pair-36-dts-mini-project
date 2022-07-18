@@ -39,14 +39,22 @@ class Menu extends Component {
         <li>
         <Link to="/">
           <Fitur onClick={() => this.props.history.push("/")}>
-            <i className="fa fa-home" /><span> Dashboard </span>
+            <i className="fa fa-home" /><span> Home </span>
           </Fitur>
           </Link>
         </li>
         <li>
-        <Link to="/hakakses">
-          <Fitur onClick={() => this.props.history.push("/hakakses")}>
-            <i className="fas fa-key"/><span> Hak Akses </span>
+        <Link to="/login">
+          <Fitur onClick={() => this.props.history.push("/login")}>
+            <i className="fas fa-key"/><span> Login </span>
+          </Fitur>
+          </Link>
+        </li>
+
+        <li>
+        <Link to="/register">
+          <Fitur onClick={() => this.props.history.push("/register")}>
+            <i className="fas fa-folder-open"/><span> Register </span>
           </Fitur>
           </Link>
         </li>
