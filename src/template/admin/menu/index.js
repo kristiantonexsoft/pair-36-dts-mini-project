@@ -32,7 +32,6 @@ class Menu extends Component {
         <div className="dropdown">
         <font color="#0285b4"><b>{this.props.dataUserLogin.nama}</b></font>
         </div>
-        <p className="text-white"><font color="#0285b4">{this.props.dataUserLogin.role }</font></p>
       </div>
     </div>
     <div id="sidebar-menu">
@@ -44,55 +43,6 @@ class Menu extends Component {
           </Fitur>
           </Link>
         </li>
-
-        <li>
-        <Link to="/lantai">
-          <div className="waves-effect"><i className="fas fa-th-list" /><span> Data Master<span className="float-right menu-arrow"></span> </span></div>
-          </Link>
-          <ul className="submenu">
-            <li>
-        <Link to="/lantai">
-          <Fitur onClick={() => this.props.history.push("/lantai")}>
-            <i className="fas fa-angle-double-right" /><span> Lantai</span>
-          </Fitur>
-          </Link>
-            </li>
-
-            <li>
-        <Link to="/ruangan">
-          <Fitur onClick={() => this.props.history.push("/ruangan")}>
-            <i className="fas fa-angle-double-right" /><span> Ruangan</span>
-          </Fitur>
-          </Link>
-            </li>
-
-            <li>
-        <Link to="/divisi">
-          <Fitur onClick={() => this.props.history.push("/divisi")}>
-            <i className="fas fa-angle-double-right" /><span> Divisi</span>
-          </Fitur>
-          </Link>
-            </li>
-
-            <li>
-        <Link to="/jabatan">
-          <Fitur onClick={() => this.props.history.push("/jabatan")}>
-            <i className="fas fa-angle-double-right" /><span> Jabatan</span>
-          </Fitur>
-          </Link>
-            </li>
-
-            <li>
-        <Link to="/karyawan">
-          <Fitur onClick={() => this.props.history.push("/karyawan")}>
-            <i className="fas fa-angle-double-right" /><span> karyawan</span>
-          </Fitur>
-          </Link>
-            </li>
-          
-          </ul>
-        </li>
-
         <li>
         <Link to="/hakakses">
           <Fitur onClick={() => this.props.history.push("/hakakses")}>
