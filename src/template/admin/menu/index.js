@@ -26,7 +26,14 @@ class Menu extends Component {
   <div className="slimscroll-menu" id="remove-scroll">
     <div className="user-details">
       <div className="float-left mr-2">
-        <img src={logo} className="thumb-md rounded-circle" />
+      {this.props.checkLogin === false ? (
+              <>
+          
+              </>
+            ) : (
+              <img src={logo} className="thumb-md rounded-circle" />
+            )}
+        
       </div>
       <div className="user-info">
         <div className="dropdown">
@@ -36,7 +43,10 @@ class Menu extends Component {
     </div>
     <div id="sidebar-menu">
       <ul className="metismenu" id="side-menu">
-        <li>
+
+      {this.props.checkLogin === false ? (
+              <>
+                <li>
         <Link to="/">
           <Fitur onClick={() => this.props.history.push("/")}>
             <i className="fa fa-home" /><span> Home </span>
@@ -58,7 +68,16 @@ class Menu extends Component {
           </Fitur>
           </Link>
         </li>
-
+              </>
+            ) : (
+              <>
+                <li>
+        <Link to="/">
+          <Fitur onClick={() => this.props.history.push("/")}>
+            <i className="fa fa-home" /><span> Home </span>
+          </Fitur>
+          </Link>
+        </li>
         <li>
         <Link to="/logout">
           <Fitur redirect={() => { this.doLogout()}}>
@@ -66,6 +85,8 @@ class Menu extends Component {
           </Fitur>
           </Link>
         </li>
+              </>
+            )}
               
       </ul>
     </div>
@@ -79,6 +100,7 @@ class Menu extends Component {
 }
 
 const mapStateToProps = state => ({
+  checkLogin: state.AReducer.isLogin,
   dataUserLogin: state.AReducer.userLogin
 })
 

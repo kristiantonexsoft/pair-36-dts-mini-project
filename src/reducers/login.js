@@ -1,19 +1,11 @@
 let defaultState = {
     users: [{
-        username : "admin",
-        password : "admin",
-        nama : "Andika Sanjaya",
+        username : "user",
+        password : "user",
+        nama : "User Bioskop",
         phone : "081000111222",
         email : "admin@nexsoft.co.id",
         role : "Admin"
-    },
-    {
-        username : "pimpinan",
-        password : "pimpinan",
-        nama : "Kristianto",
-        phone : "08990657546",
-        email : "kristiantorpl@gmail.com",
-        role : "Pimpinan"
     }]
 }
 
