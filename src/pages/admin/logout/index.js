@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../logout.png';
-import { Button, FormLogin } from "../../component"
+import logo from '../../../logout.png';
+import { Button, FormLogin } from "../../../component"
 
 class Logout extends Component {
     constructor(props) {

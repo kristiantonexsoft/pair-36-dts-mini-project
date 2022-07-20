@@ -13,7 +13,9 @@ class Menu extends Component {
     
     doLogout = () => {
       if(window.confirm("yakin ingin keluar dari sistem ?")){
-        this.props.logoutAction()
+           this.props.logoutAction()
+        }else{
+
         }
     }
 

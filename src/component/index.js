@@ -13,5 +13,6 @@ import Content from "./content"
 import Modal from "./modal"
 import Textarea from "./textarea"
 import Check from "./check"
+import Card from "./card"
 
-export {Fitur, Check, Button, Textarea, Radio, Input, FormLogin, Fieldset, Label, Select, Option, IsiBody, HeaderContent, Content, Modal}
+export {Card, Fitur, Check, Button, Textarea, Radio, Input, FormLogin, Fieldset, Label, Select, Option, IsiBody, HeaderContent, Content, Modal}
