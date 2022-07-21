@@ -7,6 +7,7 @@ import {
   HeaderContent, 
   Content,
   Modal} from "../../../component"
+  import { Link} from "react-router-dom"
 
 class Dashboard extends Component {
     constructor(props) {
@@ -113,11 +114,16 @@ class Dashboard extends Component {
     {
                     this.state.films.map((b, index) => {     
                       let img = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${b.backdrop_path}`;
+                      let url = `/film/detail/${b.id}`;
                         return (
 
   <div className="col-md-6 col-lg-6 col-xl-3" key={index}>
   <div className="card m-b-30">
+  <Link to={url}>
+  <div className="waves-effect" onClick={() => this.props.history.push(url)}>
     <img className="card-img-top img-fluid" src={img} alt="Card image cap" />
+  </div>
+  </Link>
     <div className="card-body">
       <h4 className="card-title font-16 mt-0">{b.original_title}</h4>
     </div>
